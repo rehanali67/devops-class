@@ -6,8 +6,57 @@
   <meta name="description" content="Upcoming student club events at UniConnect – workshops, competitions, fairs, and social gatherings happening this semester." />
   <title>Upcoming Events | UniConnect</title>
   <link rel="stylesheet" href="../styles/style.css" />
+  <style>
+    /* Events Page Mini Redesign */
+    .events-page .events-hero {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .events-page .events-hero::after {
+      content: "📅";
+      position: absolute;
+      right: 8%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 7rem;
+      opacity: 0.08;
+    }
+
+    .events-page .event-card {
+      border: 1px solid rgba(79, 70, 229, 0.12);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .events-page .event-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .events-page #events-table tbody tr {
+      transition: background-color 0.2s ease;
+    }
+
+    .events-page #events-table tbody tr:hover {
+      background-color: rgba(79, 70, 229, 0.05);
+    }
+
+    .events-page .notice {
+      border-left: 4px solid #4f46e5;
+    }
+
+    @media (max-width: 700px) {
+      .events-page .events-hero::after {
+        display: none;
+      }
+
+      .events-page .event-card:hover {
+        transform: none;
+      }
+    }
+  </style>
 </head>
-<body>
+<body class="events-page">
 
   <!-- ========== NAVBAR ========== -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
@@ -30,7 +79,7 @@
   </nav>
 
   <!-- ========== PAGE HEADER ========== -->
-  <header class="page-header" id="events-header">
+  <header class="page-header events-hero" id="events-header">
     <div class="container">
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="index.html">Home</a>
