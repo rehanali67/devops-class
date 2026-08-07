@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join a student club at UniConnect – fill out your membership application, choose your club category, and become part of the campus community." />
+  <title>Join a Club | UniConnect</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <div class="brand-icon">🎓</div>
+        UniConnect
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="highlights.html">Highlights</a></li>
+        <li><a href="join.html" class="nav-cta active" aria-current="page">Join a Club</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== PAGE HEADER ========== -->
+  <header class="page-header" id="join-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>Join</span>
+      </nav>
+      <h1>Get Involved</h1>
+      <p>Ready to be part of something great? Fill out the form below and we'll connect you with the right club.</p>
+    </div>
+  </header>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">Simple Process</span>
+        <h2>How to Join a Club</h2>
+        <p>Getting started is easy. Follow these four steps to become a club member.</p>
+      </div>
+      <div class="steps-list" style="max-width:700px; margin:0 auto;" role="list">
+
+        <div class="step-item" role="listitem">
+          <div class="step-number" aria-label="Step 1">1</div>
+          <div class="step-content">
+            <h3>Browse the Clubs</h3>
+            <p>Visit our <a href="clubs.html">Clubs page</a> to explore all 20+ student clubs across five categories. Find the one that matches your interests and passion.</p>
+          </div>
+        </div>
+
+        <div class="step-item" role="listitem">
+          <div class="step-number" aria-label="Step 2">2</div>
+          <div class="step-content">
+            <h3>Fill the Application Form</h3>
+            <p>Complete the membership form below with your details and preferred club. Most clubs have open enrollment; some may require a short interview or audition.</p>
+          </div>
+        </div>
+
+        <div class="step-item" role="listitem">
+          <div class="step-number" aria-label="Step 3">3</div>
+          <div class="step-content">
+            <h3>Wait for Confirmation</h3>
+            <p>The club coordinator will review your application and send a confirmation email within 3–5 business days. Check your university email regularly.</p>
+          </div>
+        </div>
+
+        <div class="step-item" role="listitem">
+          <div class="step-number" aria-label="Step 4">4</div>
+          <div class="step-content">
+            <h3>Attend Your First Session</h3>
+            <p>Once confirmed, you'll receive a welcome kit with the meeting schedule, club guidelines, and everything you need to dive in. Welcome aboard! 🎉</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== APPLICATION FORM ========== -->
+  <section class="section section-alt" id="application-form">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">Membership Application</span>
+        <h2>Apply for Club Membership</h2>
+        <p>Fields marked with <span style="color:#ef4444;">*</span> are required.</p>
+      </div>
+
+      <div class="form-card">
+        <form id="clubApplicationForm" action="#" method="post" novalidate>
+
+          <!-- Personal Information -->
+          <fieldset style="border:none; margin-bottom:1.5rem;">
+            <legend style="font-weight:700; font-size:1rem; color:#1e293b; margin-bottom:1rem; padding-bottom:.5rem; border-bottom:2px solid #e2e8f0; width:100%;">
+              👤 Personal Information
+            </legend>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name <span class="required">*</span></label>
+                <input type="text" id="firstName" name="firstName" placeholder="e.g. Ahmed" required autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name <span class="required">*</span></label>
+                <input type="text" id="lastName" name="lastName" placeholder="e.g. Khan" required autocomplete="family-name" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="studentId">Student ID <span class="required">*</span></label>
+                <input type="text" id="studentId" name="studentId" placeholder="e.g. 2024-CS-001" required />
+              </div>
+              <div class="form-group">
+                <label for="year">Year of Study <span class="required">*</span></label>
+                <select id="year" name="year" required>
+                  <option value="" disabled selected>Select year…</option>
+                  <option value="1">1st Year</option>
+                  <option value="2">2nd Year</option>
+                  <option value="3">3rd Year</option>
+                  <option value="4">4th Year</option>
+                  <option value="pg">Postgraduate</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">University Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="you@university.edu" required autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+92 300 0000000" autocomplete="tel" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="department">Department / Faculty <span class="required">*</span></label>
+              <select id="department" name="department" required>
+                <option value="" disabled selected>Select department…</option>
+                <option>Computer Science</option>
+                <option>Electrical Engineering</option>
+                <option>Business Administration</option>
+                <option>Social Sciences</option>
+                <option>Arts &amp; Humanities</option>
+                <option>Natural Sciences</option>
+                <option>Law</option>
+                <option>Medicine</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <!-- Club Preferences -->
+          <fieldset style="border:none; margin-bottom:1.5rem;">
+            <legend style="font-weight:700; font-size:1rem; color:#1e293b; margin-bottom:1rem; padding-bottom:.5rem; border-bottom:2px solid #e2e8f0; width:100%;">
+              🎯 Club Preferences
+            </legend>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="category">Club Category <span class="required">*</span></label>
+                <select id="category" name="category" required>
+                  <option value="" disabled selected>Select category…</option>
+                  <option>Academic &amp; Professional</option>
+                  <option>Sports &amp; Fitness</option>
+                  <option>Arts &amp; Culture</option>
+                  <option>Technology &amp; Innovation</option>
+                  <option>Community Service</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="clubName">Preferred Club <span class="required">*</span></label>
+                <select id="clubName" name="clubName" required>
+                  <option value="" disabled selected>Select club…</option>
+                  <optgroup label="Academic">
+                    <option>Debate Society</option>
+                    <option>Model United Nations</option>
+                    <option>Pre-Law Society</option>
+                    <option>Science &amp; Research Club</option>
+                  </optgroup>
+                  <optgroup label="Sports">
+                    <option>Football Club</option>
+                    <option>Basketball Club</option>
+                    <option>Martial Arts Society</option>
+                    <option>Yoga &amp; Wellness Club</option>
+                  </optgroup>
+                  <optgroup label="Arts">
+                    <option>Drama &amp; Theatre Society</option>
+                    <option>Photography Club</option>
+                    <option>Music &amp; Band Society</option>
+                    <option>Literary Circle</option>
+                  </optgroup>
+                  <optgroup label="Technology">
+                    <option>Robotics Club</option>
+                    <option>AI &amp; Machine Learning Society</option>
+                    <option>Cybersecurity Club</option>
+                    <option>Entrepreneurship &amp; Startup Lab</option>
+                  </optgroup>
+                  <optgroup label="Community">
+                    <option>Eco &amp; Environment Club</option>
+                    <option>Volunteer &amp; Outreach Society</option>
+                    <option>Fundraising &amp; Charity Club</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="experience">Relevant Experience / Skills</label>
+              <textarea id="experience" name="experience" placeholder="Briefly describe any relevant experience, skills, or achievements that support your application…"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="motivation">Why do you want to join this club? <span class="required">*</span></label>
+              <textarea id="motivation" name="motivation" placeholder="Tell us what motivates you to join and what you hope to contribute to the club…" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="availability">Availability</label>
+              <select id="availability" name="availability">
+                <option value="" disabled selected>Select availability…</option>
+                <option>Weekday mornings</option>
+                <option>Weekday afternoons</option>
+                <option>Weekday evenings</option>
+                <option>Weekends only</option>
+                <option>Flexible – anytime</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <!-- Agreement -->
+          <fieldset style="border:none; margin-bottom:1.5rem;">
+            <div class="form-group" style="display:flex; align-items:flex-start; gap:.75rem;">
+              <input type="checkbox" id="agree" name="agree" required style="width:auto; margin-top:4px; accent-color:#4f46e5;" />
+              <label for="agree" style="font-weight:400; font-size:.9rem; color:#475569;">
+                I confirm that the information provided is accurate and I agree to abide by the club's rules and university code of conduct. <span class="required">*</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <button type="submit" id="submitApplication" class="btn btn-primary form-submit">
+            Submit Application ✉️
+          </button>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">Need Help?</span>
+        <h2>Contact the Clubs Office</h2>
+        <p>Have questions before applying? Our Student Affairs team is happy to help.</p>
+      </div>
+      <div class="cards-grid" style="max-width:800px; margin:0 auto;">
+
+        <div class="card text-center">
+          <div class="card-icon card-icon-primary" style="margin:0 auto 1rem;">📧</div>
+          <h3>Email Us</h3>
+          <p>Send us your questions and we'll respond within 24 hours on business days.</p>
+          <a href="mailto:clubs@university.edu" class="btn btn-outline" style="margin-top:.5rem;">clubs@university.edu</a>
+        </div>
+
+        <div class="card text-center">
+          <div class="card-icon card-icon-accent" style="margin:0 auto 1rem;">🏢</div>
+          <h3>Visit Us</h3>
+          <p>Student Affairs Office, Room 101, Admin Block. Open Monday–Friday, 9 AM – 4 PM.</p>
+          <a href="#" class="btn btn-outline" style="margin-top:.5rem;">Get Directions</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-brand" style="margin-bottom:1rem;display:inline-flex;">
+            <div class="brand-icon">🎓</div>
+            UniConnect
+          </a>
+          <p>The official student clubs portal of State University. Connecting students with communities since 2010.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="clubs.html">Clubs</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="highlights.html">Highlights</a></li>
+            <li><a href="join.html">Join</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="clubs.html#academic">Academic</a></li>
+            <li><a href="clubs.html#sports">Sports</a></li>
+            <li><a href="clubs.html#arts">Arts</a></li>
+            <li><a href="clubs.html#tech">Technology</a></li>
+            <li><a href="clubs.html#community">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:clubs@university.edu">clubs@university.edu</a></li>
+            <li><a href="#">Student Affairs Office</a></li>
+            <li><a href="#">Campus Map</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 UniConnect – State University Student Clubs Portal</p>
+        <p>Made with ❤️ by the Student Affairs Team</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav toggle
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Form submission
+    const form = document.getElementById('clubApplicationForm');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (form.checkValidity()) {
+        const btn = document.getElementById('submitApplication');
+        btn.textContent = '✅ Application Submitted!';
+        btn.style.background = '#10b981';
+        btn.disabled = true;
+        setTimeout(() => {
+          btn.textContent = 'Submit Application ✉️';
+          btn.style.background = '';
+          btn.disabled = false;
+          form.reset();
+        }, 4000);
+      } else {
+        form.reportValidity();
+      }
+    });
+  </script>
+</body>
+</html>

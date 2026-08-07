@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Upcoming student club events at UniConnect – workshops, competitions, fairs, and social gatherings happening this semester." />
+  <title>Upcoming Events | UniConnect</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <div class="brand-icon">🎓</div>
+        UniConnect
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="events.html" class="active" aria-current="page">Events</a></li>
+        <li><a href="highlights.html">Highlights</a></li>
+        <li><a href="join.html" class="nav-cta">Join a Club</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== PAGE HEADER ========== -->
+  <header class="page-header" id="events-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>Events</span>
+      </nav>
+      <h1>Upcoming Events</h1>
+      <p>Stay up to date with the latest club activities, workshops, competitions, and social gatherings this semester.</p>
+    </div>
+  </header>
+
+  <!-- ========== FEATURED EVENTS ========== -->
+  <section class="section" id="featured-events">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Don't Miss Out</span>
+        <h2>Featured Events This Month</h2>
+        <p>Hand-picked highlights from across all club categories happening very soon.</p>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:1rem;" id="events-list">
+
+        <div class="event-card">
+          <div class="event-date-box" aria-label="August 15">
+            <span class="day">15</span>
+            <span class="month">Aug</span>
+          </div>
+          <div>
+            <div style="display:flex; align-items:center; gap:.5rem; margin-bottom:.4rem;">
+              <span class="badge badge-primary">Technology</span>
+              <span style="font-size:.8rem; color:#64748b;">🕙 10:00 AM – 4:00 PM</span>
+            </div>
+            <h3 style="font-size:1.1rem; margin-bottom:.3rem;">Annual AI Hackathon 2025</h3>
+            <p style="margin:0; font-size:.9rem;">24-hour hackathon where teams of 3–5 build innovative AI solutions. Cash prizes and internship opportunities for top teams. Venue: Engineering Block C, Lab 301.</p>
+            <div class="tags" style="margin-top:.6rem;">
+              <span class="tag">AI/ML</span>
+              <span class="tag">Teams of 3–5</span>
+              <span class="tag">Cash Prizes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date-box" aria-label="August 18">
+            <span class="day">18</span>
+            <span class="month">Aug</span>
+          </div>
+          <div>
+            <div style="display:flex; align-items:center; gap:.5rem; margin-bottom:.4rem;">
+              <span class="badge badge-accent">Arts</span>
+              <span style="font-size:.8rem; color:#64748b;">🕕 5:00 PM – 8:00 PM</span>
+            </div>
+            <h3 style="font-size:1.1rem; margin-bottom:.3rem;">Drama Society – Annual Stage Production</h3>
+            <p style="margin:0; font-size:.9rem;">The Drama &amp; Theatre Society presents "Echoes of Tomorrow" – an original student-written play exploring identity and belonging. Open seating, free entry.</p>
+            <div class="tags" style="margin-top:.6rem;">
+              <span class="tag">Theatre</span>
+              <span class="tag">Free Entry</span>
+              <span class="tag">Open Seating</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date-box" aria-label="August 22">
+            <span class="day">22</span>
+            <span class="month">Aug</span>
+          </div>
+          <div>
+            <div style="display:flex; align-items:center; gap:.5rem; margin-bottom:.4rem;">
+              <span class="badge badge-success">Community</span>
+              <span style="font-size:.8rem; color:#64748b;">🕗 7:00 AM – 12:00 PM</span>
+            </div>
+            <h3 style="font-size:1.1rem; margin-bottom:.3rem;">Campus Green Day – Tree Planting Drive</h3>
+            <p style="margin:0; font-size:.9rem;">Join the Eco Club in planting 200 trees across campus. Breakfast provided. Volunteer certificates issued. Bring gloves if you have them!</p>
+            <div class="tags" style="margin-top:.6rem;">
+              <span class="tag">Environment</span>
+              <span class="tag">Volunteering</span>
+              <span class="tag">Certificate</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date-box" aria-label="August 27">
+            <span class="day">27</span>
+            <span class="month">Aug</span>
+          </div>
+          <div>
+            <div style="display:flex; align-items:center; gap:.5rem; margin-bottom:.4rem;">
+              <span class="badge badge-primary">Academic</span>
+              <span style="font-size:.8rem; color:#64748b;">🕑 2:00 PM – 6:00 PM</span>
+            </div>
+            <h3 style="font-size:1.1rem; margin-bottom:.3rem;">Inter-University Debate Championship</h3>
+            <p style="margin:0; font-size:.9rem;">12 universities, 6 rounds of parliamentary debate. Motion revealed 30 minutes before each round. Trophy and certificates for winners. Auditorium A.</p>
+            <div class="tags" style="margin-top:.6rem;">
+              <span class="tag">Debate</span>
+              <span class="tag">Inter-University</span>
+              <span class="tag">Trophy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date-box" aria-label="September 03">
+            <span class="day">03</span>
+            <span class="month">Sep</span>
+          </div>
+          <div>
+            <div style="display:flex; align-items:center; gap:.5rem; margin-bottom:.4rem;">
+              <span class="badge badge-accent">Sports</span>
+              <span style="font-size:.8rem; color:#64748b;">🕙 9:00 AM onwards</span>
+            </div>
+            <h3 style="font-size:1.1rem; margin-bottom:.3rem;">Football League Season Opener</h3>
+            <p style="margin:0; font-size:.9rem;">The football club kicks off the inter-department league season. 8 department teams compete across a 10-week season. Spectators welcome – come cheer!</p>
+            <div class="tags" style="margin-top:.6rem;">
+              <span class="tag">Football</span>
+              <span class="tag">League</span>
+              <span class="tag">All Welcome</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date-box" aria-label="September 10">
+            <span class="day">10</span>
+            <span class="month">Sep</span>
+          </div>
+          <div>
+            <div style="display:flex; align-items:center; gap:.5rem; margin-bottom:.4rem;">
+              <span class="badge badge-primary">Technology</span>
+              <span style="font-size:.8rem; color:#64748b;">🕒 3:00 PM – 5:00 PM</span>
+            </div>
+            <h3 style="font-size:1.1rem; margin-bottom:.3rem;">Cybersecurity CTF Workshop</h3>
+            <p style="margin:0; font-size:.9rem;">Capture-the-Flag practice session led by the Cybersecurity Club. Learn web exploitation, cryptography basics, and reverse engineering. No experience needed!</p>
+            <div class="tags" style="margin-top:.6rem;">
+              <span class="tag">CTF</span>
+              <span class="tag">Beginners Welcome</span>
+              <span class="tag">Cybersecurity</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FULL SCHEDULE TABLE ========== -->
+  <section class="section section-alt" id="full-schedule">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Full Schedule</span>
+        <h2>Semester Events Calendar</h2>
+        <p>A complete overview of all club events scheduled for this semester.</p>
+      </div>
+      <div class="events-table-wrapper">
+        <table id="events-table" aria-label="Semester events schedule">
+          <thead>
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Event</th>
+              <th scope="col">Club</th>
+              <th scope="col">Venue</th>
+              <th scope="col">Category</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Aug 15, 2025</td>
+              <td>AI Hackathon 2025</td>
+              <td>AI &amp; ML Society</td>
+              <td>Eng. Block C, Lab 301</td>
+              <td><span class="badge badge-primary">Technology</span></td>
+              <td><span class="badge badge-success">Registration Open</span></td>
+            </tr>
+            <tr>
+              <td>Aug 18, 2025</td>
+              <td>Annual Stage Production</td>
+              <td>Drama Society</td>
+              <td>Main Auditorium</td>
+              <td><span class="badge badge-accent">Arts</span></td>
+              <td><span class="badge badge-success">Free Entry</span></td>
+            </tr>
+            <tr>
+              <td>Aug 20, 2025</td>
+              <td>Photography Walk – Old Campus</td>
+              <td>Photography Club</td>
+              <td>Old Campus Gate</td>
+              <td><span class="badge badge-accent">Arts</span></td>
+              <td><span class="badge badge-success">Open</span></td>
+            </tr>
+            <tr>
+              <td>Aug 22, 2025</td>
+              <td>Campus Green Day</td>
+              <td>Eco Club</td>
+              <td>Central Lawn</td>
+              <td><span class="badge badge-success">Community</span></td>
+              <td><span class="badge badge-success">Open</span></td>
+            </tr>
+            <tr>
+              <td>Aug 25, 2025</td>
+              <td>Yoga &amp; Mindfulness Retreat</td>
+              <td>Yoga &amp; Wellness</td>
+              <td>Sports Complex Hall</td>
+              <td><span class="badge badge-accent">Sports</span></td>
+              <td><span class="badge badge-primary">Register First</span></td>
+            </tr>
+            <tr>
+              <td>Aug 27, 2025</td>
+              <td>Inter-Uni Debate Championship</td>
+              <td>Debate Society</td>
+              <td>Auditorium A</td>
+              <td><span class="badge badge-primary">Academic</span></td>
+              <td><span class="badge badge-success">Open to Watch</span></td>
+            </tr>
+            <tr>
+              <td>Sep 03, 2025</td>
+              <td>Football League Season Opener</td>
+              <td>Football Club</td>
+              <td>Main Sports Ground</td>
+              <td><span class="badge badge-accent">Sports</span></td>
+              <td><span class="badge badge-success">Open</span></td>
+            </tr>
+            <tr>
+              <td>Sep 07, 2025</td>
+              <td>Startup Pitch Night</td>
+              <td>Entrepreneurship Lab</td>
+              <td>Innovation Hub</td>
+              <td><span class="badge badge-primary">Technology</span></td>
+              <td><span class="badge badge-primary">Apply to Pitch</span></td>
+            </tr>
+            <tr>
+              <td>Sep 10, 2025</td>
+              <td>CTF Workshop</td>
+              <td>Cybersecurity Club</td>
+              <td>CS Lab 202</td>
+              <td><span class="badge badge-primary">Technology</span></td>
+              <td><span class="badge badge-success">Open</span></td>
+            </tr>
+            <tr>
+              <td>Sep 15, 2025</td>
+              <td>Literary Magazine Launch</td>
+              <td>Literary Circle</td>
+              <td>Campus Library</td>
+              <td><span class="badge badge-accent">Arts</span></td>
+              <td><span class="badge badge-success">Free Entry</span></td>
+            </tr>
+            <tr>
+              <td>Sep 20, 2025</td>
+              <td>Blood Donation Drive</td>
+              <td>Volunteer Society</td>
+              <td>Health Centre</td>
+              <td><span class="badge badge-success">Community</span></td>
+              <td><span class="badge badge-success">Open</span></td>
+            </tr>
+            <tr>
+              <td>Oct 01, 2025</td>
+              <td>Robotics Showcase 2025</td>
+              <td>Robotics Club</td>
+              <td>Eng. Atrium</td>
+              <td><span class="badge badge-primary">Technology</span></td>
+              <td><span class="badge badge-accent">Coming Soon</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NOTICE ========== -->
+  <section class="section" id="events-notice">
+    <div class="container">
+      <div class="notice">
+        📢 <strong>Note:</strong> Event dates are subject to change. Check the UniConnect notice board or your registered club's WhatsApp group for real-time updates. For queries, email <a href="mailto:events@university.edu">events@university.edu</a>.
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-brand" style="margin-bottom:1rem;display:inline-flex;">
+            <div class="brand-icon">🎓</div>
+            UniConnect
+          </a>
+          <p>The official student clubs portal of State University. Connecting students with communities since 2010.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="clubs.html">Clubs</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="highlights.html">Highlights</a></li>
+            <li><a href="join.html">Join</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="clubs.html#academic">Academic</a></li>
+            <li><a href="clubs.html#sports">Sports</a></li>
+            <li><a href="clubs.html#arts">Arts</a></li>
+            <li><a href="clubs.html#tech">Technology</a></li>
+            <li><a href="clubs.html#community">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:clubs@university.edu">clubs@university.edu</a></li>
+            <li><a href="#">Student Affairs Office</a></li>
+            <li><a href="#">Campus Map</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 UniConnect – State University Student Clubs Portal</p>
+        <p>Made with ❤️ by the Student Affairs Team</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+</body>
+</html>
