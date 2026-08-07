@@ -1,412 +1,138 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Explore all student club categories at UniConnect – Academic, Sports, Arts, Technology, and Community Service clubs for every student." />
-  <title>Student Clubs | UniConnect</title>
-  <link rel="stylesheet" href="../styles/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Categories | University Clubs Portal</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
+
 <body>
 
-  <!-- ========== NAVBAR ========== -->
-  <nav class="navbar" role="navigation" aria-label="Main navigation">
-    <div class="container">
-      <a href="index.html" class="nav-brand">
-        <div class="brand-icon">🎓</div>
-        UniConnect
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="navLinks" role="list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="clubs.html" class="active" aria-current="page">Clubs</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="highlights.html">Highlights</a></li>
-        <li><a href="join.html" class="nav-cta">Join a Club</a></li>
-      </ul>
-    </div>
-  </nav>
+    <header class="site-header">
+        <div class="container">
+            <h1>University Clubs Portal</h1>
 
-  <!-- ========== PAGE HEADER ========== -->
-  <header class="page-header" id="clubs-header">
-    <div class="container">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="index.html">Home</a>
-        <span>›</span>
-        <span>Clubs</span>
-      </nav>
-      <h1>Student Clubs</h1>
-      <p>Discover the full range of student clubs across five exciting categories.</p>
-    </div>
-  </header>
-
-  <!-- ========== ACADEMIC CLUBS ========== -->
-  <section class="section" id="academic">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Category 01</span>
-        <h2>📚 Academic &amp; Professional Clubs</h2>
-        <p>Sharpen your intellect, debate global issues, and prepare for your professional future.</p>
-      </div>
-      <div class="cards-grid">
-
-        <div class="card">
-          <div class="card-icon card-icon-primary">🏛️</div>
-          <h3>Debate Society</h3>
-          <p>Engage in competitive parliamentary debates, public speaking workshops, and inter-university tournaments.</p>
-          <div class="tags">
-            <span class="tag">Public Speaking</span>
-            <span class="tag">Critical Thinking</span>
-          </div>
-          <br/>
-          <span class="badge badge-primary">Open Enrollment</span>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="clubs.html" class="active">Clubs</a>
+                <a href="events.html">Events</a>
+                <a href="join.html">How to Join</a>
+                <a href="highlights.html">Highlights</a>
+            </nav>
         </div>
+    </header>
 
-        <div class="card">
-          <div class="card-icon card-icon-primary">🌍</div>
-          <h3>Model United Nations</h3>
-          <p>Simulate UN committees, draft resolutions, and develop diplomacy skills through national and international MUN conferences.</p>
-          <div class="tags">
-            <span class="tag">Diplomacy</span>
-            <span class="tag">Research</span>
-          </div>
-          <br/>
-          <span class="badge badge-primary">Open Enrollment</span>
+    <main>
+
+        <section class="page-intro">
+            <div class="container">
+                <h2>Explore Our Clubs</h2>
+
+                <p>
+                    University clubs provide students with opportunities to
+                    explore their interests, develop new skills, meet other
+                    students, and take part in campus activities.
+                </p>
+
+                <p>
+                    Explore the different categories below and find a club
+                    that matches your interests.
+                </p>
+            </div>
+        </section>
+
+        <section class="club-categories">
+            <div class="container">
+
+                <h2>Club Categories</h2>
+
+                <div class="club-grid">
+
+                    <article class="club-card">
+                        <div class="club-icon">💻</div>
+
+                        <h3>Technology Clubs</h3>
+
+                        <p>
+                            Technology clubs bring together students interested
+                            in computing, programming, technology, and
+                            innovation. Members can learn new technical skills
+                            and participate in technology-related activities.
+                        </p>
+
+                        <a href="join.html" class="card-link">
+                            Learn How to Join
+                        </a>
+                    </article>
+
+
+                    <article class="club-card">
+                        <div class="club-icon">⚽</div>
+
+                        <h3>Sports Clubs</h3>
+
+                        <p>
+                            Sports clubs provide students with opportunities to
+                            participate in physical activities, develop
+                            teamwork, and enjoy healthy competition with other
+                            students.
+                        </p>
+
+                        <a href="join.html" class="card-link">
+                            Learn How to Join
+                        </a>
+                    </article>
+
+
+                    <article class="club-card">
+                        <div class="club-icon">🎭</div>
+
+                        <h3>Cultural Clubs</h3>
+
+                        <p>
+                            Cultural clubs allow students to celebrate
+                            different cultures, traditions, arts, and
+                            creative activities while connecting with the
+                            university community.
+                        </p>
+
+                        <a href="join.html" class="card-link">
+                            Learn How to Join
+                        </a>
+                    </article>
+
+
+                    <article class="club-card">
+                        <div class="club-icon">🗣️</div>
+
+                        <h3>Debate Societies</h3>
+
+                        <p>
+                            Debate societies help students improve their
+                            communication, public speaking, critical thinking,
+                            and argumentation skills through discussions and
+                            debates.
+                        </p>
+
+                        <a href="join.html" class="card-link">
+                            Learn How to Join
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 University Clubs Portal. All rights reserved.</p>
         </div>
+    </footer>
 
-        <div class="card">
-          <div class="card-icon card-icon-primary">⚖️</div>
-          <h3>Pre-Law Society</h3>
-          <p>Mock trials, guest lectures from legal professionals, and preparation workshops for law school applications.</p>
-          <div class="tags">
-            <span class="tag">Mock Trial</span>
-            <span class="tag">Legal Studies</span>
-          </div>
-          <br/>
-          <span class="badge badge-accent">Interview Required</span>
-        </div>
-
-        <div class="card">
-          <div class="card-icon card-icon-primary">🔬</div>
-          <h3>Science &amp; Research Club</h3>
-          <p>Conduct independent research, attend lab tours, and present findings at the annual undergraduate symposium.</p>
-          <div class="tags">
-            <span class="tag">Research</span>
-            <span class="tag">STEM</span>
-          </div>
-          <br/>
-          <span class="badge badge-primary">Open Enrollment</span>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== SPORTS CLUBS ========== -->
-  <section class="section section-alt" id="sports">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Category 02</span>
-        <h2>⚽ Sports &amp; Fitness Clubs</h2>
-        <p>Stay active, compete, and build team spirit through a wide variety of athletic clubs.</p>
-      </div>
-      <div class="cards-grid">
-
-        <div class="card">
-          <div class="card-icon card-icon-rose">⚽</div>
-          <h3>Football Club</h3>
-          <p>Train with certified coaches, compete in the inter-university league, and represent UniConnect on the national stage.</p>
-          <div class="tags">
-            <span class="tag">Team Sport</span>
-            <span class="tag">Competitive</span>
-          </div>
-          <br/>
-          <span class="badge badge-accent">Tryouts Required</span>
-        </div>
-
-        <div class="card">
-          <div class="card-icon card-icon-rose">🏀</div>
-          <h3>Basketball Club</h3>
-          <p>Weekly practice sessions, friendly scrimmages, and competitive league participation for all skill levels.</p>
-          <div class="tags">
-            <span class="tag">Team Sport</span>
-            <span class="tag">All Levels</span>
-          </div>
-          <br/>
-          <span class="badge badge-primary">Open Enrollment</span>
-        </div>
-
-        <div class="card">
-          <div class="card-icon card-icon-rose">🥋</div>
-          <h3>Martial Arts Society</h3>
-          <p>Learn karate, taekwondo, and judo from experienced instructors. Belt gradings held every semester.</p>
-          <div class="tags">
-            <span class="tag">Discipline</span>
-            <span class="tag">Fitness</span>
-          </div>
-          <br/>
-          <span class="badge badge-primary">Open Enrollment</span>
-        </div>
-
-        <div class="card">
-          <div class="card-icon card-icon-rose">🧘</div>
-          <h3>Yoga &amp; Wellness Club</h3>
-          <p>Daily mindfulness sessions, meditation workshops, and wellness seminars focused on student mental health.</p>
-          <div class="tags">
-            <span class="tag">Wellness</span>
-            <span class="tag">Mental Health</span>
-          </div>
-          <br/>
-          <span class="badge badge-success">Free to Join</span>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== ARTS CLUBS ========== -->
-  <section class="section" id="arts">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Category 03</span>
-        <h2>🎨 Arts &amp; Culture Clubs</h2>
-        <p>Express yourself through creativity, performance, and cultural appreciation.</p>
-      </div>
-      <div class="cards-grid">
-
-        <div class="card">
-          <div class="card-icon card-icon-accent">🎭</div>
-          <h3>Drama &amp; Theatre Society</h3>
-          <p>Annual stage productions, improv workshops, and acting masterclasses led by professional theatre directors.</p>
-          <div class="tags">
-            <span class="tag">Acting</span>
-            <span class="tag">Stagecraft</span>
-          </div>
-          <br/>
-          <span class="badge badge-accent">Audition Required</span>
-        </div>
-
-        <div class="card">
-          <div class="card-icon card-icon-accent">📷</div>
-          <h3>Photography Club</h3>
-          <p>Weekly photo walks, darkroom workshops, digital editing tutorials, and a yearly campus photo exhibition.</p>
-          <div class="tags">
-            <span class="tag">Photography</span>
-            <span class="tag">Digital Art</span>
-          </div>
-          <br/>
-          <span class="badge badge-primary">Open Enrollment</span>
-        </div>
-
-        <div class="card">
-          <div class="card-icon card-icon-accent">🎵</div>
-          <h3>Music &amp; Band Society</h3>
-          <p>Jam sessions, songwriting workshops, live performances at campus events, and collaboration with local artists.</p>
-          <div class="tags">
-            <span class="tag">Music</span>
-            <span class="tag">Performance</span>
-          </div>
-          <br/>
-          <span class="badge badge-primary">Open Enrollment</span>
-        </div>
-
-        <div class="card">
-          <div class="card-icon card-icon-accent">✍️</div>
-          <h3>Literary Circle</h3>
-          <p>Creative writing workshops, poetry slams, book discussions, and publication of the annual student literary magazine.</p>
-          <div class="tags">
-            <span class="tag">Writing</span>
-            <span class="tag">Literature</span>
-          </div>
-          <br/>
-          <span class="badge badge-primary">Open Enrollment</span>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== TECH CLUBS ========== -->
-  <section class="section section-alt" id="tech">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Category 04</span>
-        <h2>💻 Technology &amp; Innovation Clubs</h2>
-        <p>Code, build, and innovate. These clubs prepare you for the digital future.</p>
-      </div>
-      <div class="cards-grid">
-
-        <div class="card">
-          <div class="card-icon card-icon-success">🤖</div>
-          <h3>Robotics Club</h3>
-          <p>Design and build autonomous robots, compete in national robotics championships, and collaborate with engineering faculties.</p>
-          <div class="tags">
-            <span class="tag">Robotics</span>
-            <span class="tag">Engineering</span>
-          </div>
-          <br/>
-          <span class="badge badge-accent">Interview Required</span>
-        </div>
-
-        <div class="card">
-          <div class="card-icon card-icon-success">🧠</div>
-          <h3>AI &amp; Machine Learning Society</h3>
-          <p>Workshops on Python, TensorFlow, and data science. Host the annual university AI hackathon and research fair.</p>
-          <div class="tags">
-            <span class="tag">AI/ML</span>
-            <span class="tag">Python</span>
-          </div>
-          <br/>
-          <span class="badge badge-primary">Open Enrollment</span>
-        </div>
-
-        <div class="card">
-          <div class="card-icon card-icon-success">🔐</div>
-          <h3>Cybersecurity Club</h3>
-          <p>Ethical hacking workshops, CTF competitions, and security awareness campaigns across campus.</p>
-          <div class="tags">
-            <span class="tag">Security</span>
-            <span class="tag">Networking</span>
-          </div>
-          <br/>
-          <span class="badge badge-primary">Open Enrollment</span>
-        </div>
-
-        <div class="card">
-          <div class="card-icon card-icon-success">💼</div>
-          <h3>Entrepreneurship &amp; Startup Lab</h3>
-          <p>Turn your ideas into businesses. Pitch competitions, mentorship from venture capitalists, and seed funding opportunities.</p>
-          <div class="tags">
-            <span class="tag">Startups</span>
-            <span class="tag">Business</span>
-          </div>
-          <br/>
-          <span class="badge badge-accent">Application Required</span>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== COMMUNITY CLUBS ========== -->
-  <section class="section" id="community">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Category 05</span>
-        <h2>🌱 Community Service Clubs</h2>
-        <p>Give back, make a difference, and leave a lasting impact beyond the campus walls.</p>
-      </div>
-      <div class="cards-grid">
-
-        <div class="card">
-          <div class="card-icon card-icon-sky">🌿</div>
-          <h3>Eco &amp; Environment Club</h3>
-          <p>Campus sustainability drives, tree-planting campaigns, zero-waste events, and environmental policy advocacy.</p>
-          <div class="tags">
-            <span class="tag">Sustainability</span>
-            <span class="tag">Environment</span>
-          </div>
-          <br/>
-          <span class="badge badge-success">Free to Join</span>
-        </div>
-
-        <div class="card">
-          <div class="card-icon card-icon-sky">❤️</div>
-          <h3>Volunteer &amp; Outreach Society</h3>
-          <p>Weekend community service projects, hospital visits, tutoring programs for underprivileged children, and blood drives.</p>
-          <div class="tags">
-            <span class="tag">Volunteering</span>
-            <span class="tag">Social Impact</span>
-          </div>
-          <br/>
-          <span class="badge badge-success">Free to Join</span>
-        </div>
-
-        <div class="card">
-          <div class="card-icon card-icon-sky">💰</div>
-          <h3>Fundraising &amp; Charity Club</h3>
-          <p>Organize charity events, online fundraisers, and partnership campaigns with registered NGOs and nonprofits.</p>
-          <div class="tags">
-            <span class="tag">Fundraising</span>
-            <span class="tag">NGO Partnerships</span>
-          </div>
-          <br/>
-          <span class="badge badge-primary">Open Enrollment</span>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== JOIN CTA ========== -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="spotlight">
-        <div>
-          <h2>Found Your Club?</h2>
-          <p>Submit your membership application today. Spots fill up fast every semester!</p>
-        </div>
-        <a href="join.html" class="btn btn-accent">Apply Now →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== FOOTER ========== -->
-  <footer id="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="nav-brand" style="margin-bottom:1rem;display:inline-flex;">
-            <div class="brand-icon">🎓</div>
-            UniConnect
-          </a>
-          <p>The official student clubs portal of State University. Connecting students with communities since 2010.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Pages</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="clubs.html">Clubs</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="highlights.html">Highlights</a></li>
-            <li><a href="join.html">Join</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Categories</h4>
-          <ul>
-            <li><a href="#academic">Academic</a></li>
-            <li><a href="#sports">Sports</a></li>
-            <li><a href="#arts">Arts</a></li>
-            <li><a href="#tech">Technology</a></li>
-            <li><a href="#community">Community</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="mailto:clubs@university.edu">clubs@university.edu</a></li>
-            <li><a href="#">Student Affairs Office</a></li>
-            <li><a href="#">Campus Map</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 UniConnect – State University Student Clubs Portal</p>
-        <p>Made with ❤️ by the Student Affairs Team</p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    const toggle = document.getElementById('navToggle');
-    const links  = document.getElementById('navLinks');
-    toggle.addEventListener('click', () => {
-      const isOpen = links.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', isOpen);
-    });
-  </script>
 </body>
 </html>
+```
